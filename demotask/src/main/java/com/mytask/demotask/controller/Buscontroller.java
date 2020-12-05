@@ -29,5 +29,11 @@ public class Buscontroller
         busservice.update(bus);
         return bus;
     }
+    @DeleteMapping("/delete")
+    public void deleteBus(@RequestBody Bus bus)
+    {
+        busservice.delete(bus);
+    }
+
 
 }
