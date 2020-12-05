@@ -25,4 +25,8 @@ public class Busservice {
     {
         BusRepository.save(bus);
     }
+     public void delete(Bus bus)
+    {
+        BusRepository.delete(bus);
+    }
 }
